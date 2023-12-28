@@ -1,0 +1,149 @@
+:root{
+    --green:#017143;
+    --lpink:#ecb8b8;
+    --pink:#f14d80;
+    --white:#ffffff;
+}
+*{
+    margin: 0;
+
+}
+body{
+    background-color: var(--white);
+    position: relative;
+}
+.backdrop{
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    z-index: -3;
+    opacity: 30%;
+    width: 400px;
+}
+.header{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    box-shadow: 0px 5px 5px var(--green);
+    margin: 0px;
+    padding: 5px;
+
+
+}
+.logo{
+    flex: 3;
+    
+}
+.logo img{
+    width: 75px;;
+}
+.nav{
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items:center;
+
+    font-weight: 1000;
+    font-size: large;
+
+}
+.nav a{
+    text-decoration: none;
+    color: var(--white);
+    background-color: #017143;
+    padding: 5px 10px;
+    border-radius: 35px;
+}
+.nav a:hover{
+
+    text-shadow:0px 0px 6px  #017143;
+    background-color:white;
+}
+.main{
+    padding-left: 30px;
+    
+}
+.container{
+    display: flex;
+    align-items: center;
+    
+    height: 100vh;
+}
+.circle{
+    height: 75vh;
+    width: 45vw;
+    background-color:var(--green);
+    border-radius: 70% 0% 0% 0%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index:-3;
+
+
+}
+.img{
+    position: absolute;
+    bottom: 0;
+    right: 250px;
+    
+}
+.list{
+    display: flex;
+    flex: 1;
+    align-self: center;
+    justify-content: space-between;
+
+}
+
+.list div {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 5px;
+    position: relative;
+    transition-duration: 1s;
+}
+.listh{
+    position: absolute;
+    bottom: 0;
+    left: 400px;
+    
+}
+.pic{
+    height: 60px;
+    width: 50px;
+}
+
+.hhh{
+    background-color:#017143;
+    
+}
+.hh{
+    background-color: #ecb8b8;
+}
+.h3{
+    background-color: #f14d80;
+}
+#pic1{
+    position: absolute;
+    bottom: 2px;
+}
+#pic2{
+    position: absolute;
+    bottom: 5px;
+    right: 4px;
+
+}
+#pic3{
+    position: absolute;
+    bottom: 7px;
+}
+
+.green{
+    transition: 1s;
+}
+
+.pic:hover{
+    height: 100px;
+    width: 70px;
+}
